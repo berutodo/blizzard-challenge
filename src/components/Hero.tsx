@@ -17,9 +17,11 @@ export default function Hero (){
         <div className="w-screen flex justify-center bg-black">
         <div className="flex flex-row flex-wrap w-4/5 justify-center gap-10 p-2">
         {data.map( (e: ApiObj) => <Image {...e} key={e.name} />)}
-        <div className="w-72 text-white flex flex-col justify-center items-center border-2 border-[#212428] rounded-md">
-            <h1>Blizzard</h1>
-            <p>Ver todos os Jogos</p>
+        <div className="w-72 hover:cursor-pointer text-white flex flex-col justify-center items-center border-2 border-[#212428] rounded-md">
+            <img src="src\assets\blizzard.svg" alt="Blizzard Logo" />
+            <div className="flex flex-row gap-2 items-center">
+            <img src="src/assets/4quad.svg" alt="" /><p>Ver todos os Jogos</p>
+            </div>
         </div>
         </div>
         </div>
