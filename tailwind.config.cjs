@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'main-image': "url(https://res.cloudinary.com/ddsivmxle/image/upload/v1671068328/image_2_zbkr0d.png)"
+                'main-image': "url(https://res.cloudinary.com/ddsivmxle/image/upload/v1671069014/image_2_qnmfvt.webp)"
             }
         },
     },
