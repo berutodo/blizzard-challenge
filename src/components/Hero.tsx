@@ -1,6 +1,5 @@
 import useSWR from "swr"
 import Image from "./Image"
-const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 interface ApiObj {
     name: string;
@@ -11,7 +10,7 @@ interface ApiObj {
 }
 
 export default function Hero (){
-    const { data, error, isLoading } = useSWR('https://api.brchallenges.com/api/blizzard/games', fetcher)
+    const { data, error, isLoading } = useSWR('https://api.brchallenges.com/api/blizzard/games', (...args) => fetch(...args).then(res => res.json()))
     if (error) return <div>falhou ao carregar</div>
     if (isLoading) return <div>carregando...</div>
     return(
