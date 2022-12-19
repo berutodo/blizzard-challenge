@@ -27,8 +27,8 @@ export default function Footer (){
                     
                 </div>
                 <div className="flex justify-center items-end overflow-hidden">
-                    <img className="bg-fixed min-w-[375px]" src="src/assets/maskgroup.png" alt="" />
-                    <img className="absolute min-w-[270px] bg-fixed sm:mb-28" src="src/assets/groupimage2.png" alt="" />
+                    <img className="bg-fixed min-w-[375px]" src="https://res.cloudinary.com/ddsivmxle/image/upload/v1671485426/maskgroup_iyc22o.webp" alt="" />
+                    <img className="absolute min-w-[270px] bg-fixed sm:mb-28" src="https://res.cloudinary.com/ddsivmxle/image/upload/v1671485430/groupimage2_y5qhlt.webp" alt="" />
                 </div>
             </div>
         </div>
