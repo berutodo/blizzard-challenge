@@ -25,16 +25,16 @@ export default function Hero (){
                     <div className="w-5 h-5 rounded-3xl bg-blue-600"></div>
                 </div>
                 <div className="flex text-blue-400 items-end flex-row gap-4">
-                    <img src="src/assets/4quad.svg" alt="" width={20}/>
+                    <img src="/4quad.svg" alt="" width={15}/>
                     <h1 className="text-base font-semibold">Ver todos jogos</h1>
                 </div>
             </div>
             <div className="flex flex-row flex-wrap sm:w-4/5 justify-center gap-4 sm:gap-10 p-2">
                 {data.map( (e: ApiObj) => <Image {...e} key={e.name} />)}
                     <div className="w-40 h-56 sm:w-72 sm:h-auto hover:cursor-pointer text-white flex flex-col justify-center items-center border-2 border-[#212428] rounded-md">
-                        <img src="src\assets\blizzard.svg" alt="Blizzard Logo" />
+                        <img src="/blizzard.svg" alt="Blizzard Logo" />
                         <div className="flex flex-row gap-2 items-center">
-                            <img src="src/assets/4quad.svg" alt="" /><p>Ver todos os Jogos</p>
+                            <img src="/4quad.svg" alt="" /><p>Ver todos os Jogos</p>
                         </div>
                     </div>
             </div>

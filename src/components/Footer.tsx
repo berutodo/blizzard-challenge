@@ -8,8 +8,6 @@ export default function Footer (){
         if(navigator.userAgent.includes("Linux")){ setNavigatorOS("Linux")}
         if(navigator.userAgent.includes("Android")){ setNavigatorOS("Android")}
         if(navigator.userAgent.includes("IOS")){ setNavigatorOS("IOS")}
-
-
     })
     return(
         <div className="bg-footer-image h-full bg-no-repeat ">
