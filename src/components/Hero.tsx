@@ -15,7 +15,7 @@ export default function Hero (){
     if (isLoading) return <div>carregando...</div>
     return(
         <div className="w-screen flex flex-col items-center justify-between sm:justify-center bg-black pb-20 pt-20">
-            <div className="Topper flex flex-row p-6 w-full sm:w-3/5 text-white justify-between sm:justify-center ">
+            <div className="Topper flex flex-row p-6 w-screen sm:w-3/5 text-white justify-between items-center">
                 <h1 className="hidden sm:flex">Games</h1>
                 <h1 className="text-2xl w-40 text-left">Jogos Exclusivos</h1>
                 <div className="Icons hidden sm:flex flex-row">
@@ -24,7 +24,7 @@ export default function Hero (){
                     <div className="w-5 h-5 rounded-3xl bg-blue-600"></div>
                     <div className="w-5 h-5 rounded-3xl bg-blue-600"></div>
                 </div>
-                <div className="flex text-blue-400 items-end flex-row gap-4">
+                <div className="flex text-blue-400 items-center sm:items-end flex-row gap-4">
                     <img src="/4quad.svg" alt="" width={15}/>
                     <h1 className="text-base font-semibold">Ver todos jogos</h1>
                 </div>

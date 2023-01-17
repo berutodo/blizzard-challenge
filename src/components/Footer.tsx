@@ -12,8 +12,8 @@ export default function Footer (){
     return(
         <div className="bg-footer-image h-full bg-no-repeat ">
             <div className="flex flex-col justify-center items-center sm:flex-row bg-gradient-to-tr from-black">
-                <div className="sm:w-2/5 flex text-white justify-center mt-32">
-                    <div className="flex flex-col text-left gap-8">
+                <div className="sm:w-2/5 flex text-white justify-center mt-16 p-2 sm:mt-32">
+                    <div className="flex flex-col text-left gap-10">
                         <img className="w-36" src="src/assets/logo.png" alt="" />
                         <h1 className="text-3xl font-bold">Baixe agora o battle.net</h1>
                         <h2 className="text-lg">Seus jogos em um só lugar</h2>
