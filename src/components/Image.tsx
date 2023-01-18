@@ -12,9 +12,9 @@ export default function Image ({name, category, image, logo }:ImageProps){
                 <img className="rounded-md" src={image} alt={name} />
                 <img className="absolute mb-8" src={logo} alt="" />
             </div>
-            <div className="text-white w-screen">
-            <h3 className="text-lg hidden sm:flex font-bold">{name}</h3>
-            <p className="text-sm hidden sm:flex font-normal">{category}</p>
+            <div className="text-white w-full">
+                <h3 className="text-lg hidden sm:flex font-bold">{name}</h3>
+                <p className="text-sm hidden sm:flex font-normal">{category}</p>
             </div>
             
         </div>
