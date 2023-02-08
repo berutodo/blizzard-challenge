@@ -1,15 +1,17 @@
+import { useState } from 'react'
 import blizzardSvg from '../../src/assets/blizzard.svg'
 export default function Menu () {
+    const [useDropdownJogos, setDropdownJogos] = useState(false)
+    const dropDown = () => {
+        
+    }
     return (
-        <div className="flex w-full justify-between text-white sm:justify-center items-center border-b-[0.1px] border-opacity-10 p-6">
+        <>
+        <div className="flex w-full justify-between text-white sm:justify-center items-center p-6">
             <div className='w-full items-center sm:w-4/5 flex justify-between gap-12'>
                 <img src={blizzardSvg} alt="" />
                 <div className='hidden sm:flex text-lg font-semibold flex-row items-center gap-10'>
-                    <a className='cursor-pointer group flex flex-col items-center justify-center'>Jogos
-                        <div className='absolute w-5/6 border-2 border-pink-400 mt-20 hidden group-hover:block'>
-                        <p>Hello World!</p>
-                        </div>
-                    </a>
+                    <a className='cursor-pointer group flex flex-row items-center justify-center' onMouseOut={() => setDropdownJogos(false)} onMouseOver={() => setDropdownJogos(true)} >  <h1>Jogos</h1> <img className='block group-hover:hidden' src="/arrowdown.svg" alt="" /> <img className='hidden group-hover:block' src="arrowup.svg" alt="" /></a>
                     <a className='cursor-pointer'>Esportes</a>
                     <a className='cursor-pointer'>Loja</a>
                     <a className='cursor-pointer'>Notícias</a>
@@ -27,5 +29,12 @@ export default function Menu () {
                 </div>
             </div>
         </div>
+        <hr />
+        { useDropdownJogos &&
+            <div className='absolute border-2 border-pink-400 flex justify-center w-full bg-black group-hover:block'>
+                <div className='w-96 h-44 bg-cyan-400'></div>
+            </div>
+        }
+        </>
     )
 }
