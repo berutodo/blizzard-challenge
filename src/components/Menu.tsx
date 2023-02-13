@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import blizzardSvg from '../../src/assets/blizzard.svg'
+import Modal from './Modal'
 export default function Menu () {
     const [useDropdownJogos, setDropdownJogos] = useState(false)
+    const [useModal, setModal] = useState(false)
     const dropDown = () => {
         
     }
@@ -19,7 +21,7 @@ export default function Menu () {
                 </div>
                 <div className='hidden sm:flex flex-row text-base font-semibold gap-4'>
                     <button className='h-16 w-36 rounded-xl text-white border-2'>Criar Conta</button>
-                    <button className='h-16 w-36 rounded-xl text-white bg-blue-500'>Logar</button>
+                    <button className='h-16 w-36 rounded-xl text-white bg-blue-500' onClick={() => setModal(!useModal)}>Logar</button>
                 </div>
 
                 <div className='flex sm:hidden flex-col cursor-pointer gap-1'>
@@ -34,6 +36,10 @@ export default function Menu () {
             <div className='absolute border-2 border-pink-400 flex justify-center w-full bg-black group-hover:block'>
                 <div className='w-96 h-44 bg-cyan-400'></div>
             </div>
+        }
+        {
+            useModal &&
+            <Modal/>
         }
         </>
     )

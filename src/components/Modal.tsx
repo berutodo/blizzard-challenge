@@ -1,6 +1,6 @@
 export default function Modal (){
     return (
-        <div>
+        <div className="absolute mx-auto">
             <form action="">
                 <input type="text" placeholder="E-mail ou telefone" />
                 <input type="password" placeholder="Senha"  />
